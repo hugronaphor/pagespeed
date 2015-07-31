@@ -1,0 +1,18 @@
+extends layout
+block content
+
+    div
+        h1.
+            Check a page
+
+        form#formAddUrl(name="addurl",method="post",action="/")
+            input#inputUrl(type="text", placeholder="URL", name="url")
+            button#btnSubmit(type="submit") submit
+
+    div
+        h1.
+            Page List
+        ul
+            each result, i in results
+                li= result.url + ': ' + result.score + '(score)'
+
