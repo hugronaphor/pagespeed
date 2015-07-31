@@ -34,7 +34,6 @@ app.use(require('browser-logger')());
 app.use(function(req,res,next){
     req.db = db;
     req.psi = psi;
-    req.validateUrl = validateUrl;
     next();
 });
 
