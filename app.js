@@ -9,7 +9,10 @@ var bodyParser = require('body-parser');
 var psi = require('psi');
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/pagespeed');
+//var db = monk('localhost:27017/pagespeed');
+//var db = monk('mongodb://pagespeedAdmin:testpass@188.226.176.80:27017/pagespeed');
+var db = monk('pagespeedAdmin:testpass@188.226.176.80:47069/pagespeed');
+
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
